@@ -1,0 +1,245 @@
+ARM Linker, RVCT2.2 [Build 349]
+
+================================================================================
+
+Removing Unused input sections from the image.
+
+    Removing os_mbox.o(.text), (1444 bytes).
+    Removing os_mutex.o(.text), (2208 bytes).
+    Removing os_sem.o(.text), (1312 bytes).
+    Removing main.o(.data), (4 bytes).
+    Removing main.o(.data), (4 bytes).
+    Removing main.o(.data), (4 bytes).
+    Removing main.o(.data), (4 bytes).
+    Removing main.o(.data), (4 bytes).
+    Removing main.o(.data), (4 bytes).
+    Removing main.o(.data), (4 bytes).
+    Removing 6410init.o(RamData), (0 bytes).
+    Removing mmu.o(.text), (800 bytes).
+    Removing 6410slib.o(C$$code), (420 bytes).
+    Removing timer.o(.data), (4 bytes).
+
+14 unused section(s) (total 6216 bytes) removed from the image.
+
+================================================================================
+
+Memory Map of the image
+
+  Image Entry point : 0xc0008000
+
+  Load Region LR_1 (Base: 0xc0008000, Size: 0x00006a80, Max: 0xffffffff, ABSOLUTE)
+
+    Execution Region ER_RO (Base: 0xc0008000, Size: 0x00006a30, Max: 0xffffffff, ABSOLUTE)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0xc0008000   0x0000019c   Code   RO          219  * Init                6410init.o
+    0xc000819c   0x000000dc   Code   RO            5    .text               Os_cpu_c.o
+    0xc0008278   0x00000bd8   Code   RO           28    .text               os_core.o
+    0xc0008e50   0x00000c94   Code   RO           53    .text               os_flag.o
+    0xc0009ae4   0x00000434   Code   RO           77    .text               os_mem.o
+    0xc0009f18   0x000008f4   Code   RO          101    .text               os_q.o
+    0xc000a80c   0x00000b20   Code   RO          125    .text               os_task.o
+    0xc000b32c   0x00000264   Code   RO          137    .text               os_time.o
+    0xc000b590   0x000002cc   Code   RO          155    .text               main.o
+    0xc000b85c   0x000000cc   Code   RO          191    .text               uart.o
+    0xc000b928   0x000001d8   Code   RO          242    .text               timer.o
+    0xc000bb00   0x000000b8   Code   RO          257    .text               speed.o
+    0xc000bbb8   0x000000f4   Code   RO          269    .text               Printf.o
+    0xc000bcac   0x0000009c   Code   RO          286    .text               _printf_pad.o(c_a__un.l)
+    0xc000bd48   0x00000130   Code   RO          288    .text               _printf_hex.o(c_a__un.l)
+    0xc000be78   0x00000040   Code   RO          291    .text               vsprintf.o(c_a__un.l)
+    0xc000beb8   0x00000044   Code   RO          293    .text               __0sprintf.o(c_a__un.l)
+    0xc000befc   0x00000164   Code   RO          295    .text               aeabi_sdiv.o(c_a__un.l)
+    0xc000c060   0x00000004   Code   RO          299    .text               aeabi_idiv0.o(c_a__un.l)
+    0xc000c064   0x00000044   Code   RO          301    .text               _printf_truncate.o(c_a__un.l)
+    0xc000c0a8   0x0000009c   Code   RO          303    .text               _printf_str.o(c_a__un.l)
+    0xc000c144   0x00000140   Code   RO          305    .text               _printf_wctomb.o(c_a__un.l)
+    0xc000c284   0x00000120   Code   RO          308    .text               _printf_intcommon.o(c_a__un.l)
+    0xc000c3a4   0x000000e8   Code   RO          310    .text               _printf_oct.o(c_a__un.l)
+    0xc000c48c   0x000000c0   Code   RO          312    .text               _printf_dec.o(c_a__un.l)
+    0xc000c54c   0x000000e0   Code   RO          314    .text               _printf_longlong_dec.o(c_a__un.l)
+    0xc000c62c   0x0000003c   Code   RO          316    .text               _printf_charcount.o(c_a__un.l)
+    0xc000c668   0x00000054   Code   RO          318    .text               _printf_char_common.o(c_a__un.l)
+    0xc000c6bc   0x00000014   Code   RO          320    .text               _sputc.o(c_a__un.l)
+    0xc000c6d0   0x0000000c   Code   RO          326    .text               rt_div0.o(c_a__un.l)
+    0xc000c6dc   0x00000098   Code   RO          328    .text               lludiv10.o(c_a__un.l)
+    0xc000c774   0x00000490   Code   RO          330    .text               __printf.o(c_a__un.l)
+    0xc000cc04   0x00000a04   Code   RO          333    .text               _printf_fp_dec.o(c_a__un.l)
+    0xc000d608   0x00000034   Code   RO          335    .text               _printf_outstr_char.o(c_a__un.l)
+    0xc000d63c   0x00000014   Code   RO          337    .text               _printf_input_char.o(c_a__un.l)
+    0xc000d650   0x00000070   Code   RO          339    .text               _wcrtomb.o(c_a__un.l)
+    0xc000d6c0   0x0000002c   Code   RO          341    .text               rtudiv10.o(c_a__un.l)
+    0xc000d6ec   0x0000000c   Code   RO          343    .text               libspace.o(c_a__un.l)
+    0xc000d6f8   0x00000014   Code   RO          346    .text               rt_ctype_table.o(c_a__un.l)
+    0xc000d70c   0x00000018   Code   RO          348    .text               rt_raise.o(c_a__un.l)
+    0xc000d724   0x0000014c   Code   RO          350    .text               bigflt0.o(c_a__un.l)
+    0xc000d870   0x0000003c   Code   RO          375    .text               lc_numeric_c.o(c_a__un.l)
+    0xc000d8ac   0x00000040   Code   RO          380    .text               classify.o(m_avpu.l)
+    0xc000d8ec   0x00000068   Code   RO          382    .text               dtoi.o(m_avpu.l)
+    0xc000d954   0x00000018   Code   RO          384    .text               sys_exit.o(c_a__un.l)
+    0xc000d96c   0x0000003c   Code   RO          386    .text               lc_ctype_c.o(c_a__un.l)
+    0xc000d9a8   0x0000004c   Code   RO          389    .text               __raise.o(c_a__un.l)
+    0xc000d9f4   0x000000a0   Code   RO          391    .text               strcmp.o(c_a__un.l)
+    0xc000da94   0x0000003c   Code   RO          393    .text               fpclassify.o(m_avpu.l)
+    0xc000dad0   0x00000004   Code   RO          395    .text               use_semi.o(c_a__un.l)
+    0xc000dad4   0x0000014c   Code   RO          397    .text               defsig.o(c_a__un.l)
+    0xc000dc20   0x00000018   Code   RO          400    .text               sys_wrch.o(c_a__un.l)
+    0xc000dc38   0x0000001c   Code   RO          296    .text_udiv          aeabi_sdiv.o(c_a__un.l)
+    0xc000dc54   0x00000038   Code   RO          353    CL$$btod_d2e        btod.o(c_a__un.l)
+    0xc000dc8c   0x00000054   Code   RO          355    CL$$btod_d2e_denorm_low  btod.o(c_a__un.l)
+    0xc000dce0   0x00000068   Code   RO          354    CL$$btod_d2e_norm_op1  btod.o(c_a__un.l)
+    0xc000dd48   0x00000348   Code   RO          363    CL$$btod_div_common  btod.o(c_a__un.l)
+    0xc000e090   0x000000dc   Code   RO          360    CL$$btod_e2e        btod.o(c_a__un.l)
+    0xc000e16c   0x00000030   Code   RO          357    CL$$btod_ediv       btod.o(c_a__un.l)
+    0xc000e19c   0x00000030   Code   RO          356    CL$$btod_emul       btod.o(c_a__un.l)
+    0xc000e1cc   0x00000264   Code   RO          362    CL$$btod_mult_common  btod.o(c_a__un.l)
+    0xc000e430   0x000001b4   Code   RO            1    UCOS_ARM            Os_cpu_a.o
+    0xc000e5e4   0x00000008   Code   RO          378    x$fpl$ieeestatus    istatus.o(fz_avp.l)
+    0xc000e5ec   0x00000004   Code   RO          322    x$fpl$printf1       printf1.o(fz_avp.l)
+    0xc000e5f0   0x00000004   Code   RO          324    x$fpl$printf2       printf2.o(fz_avp.l)
+    0xc000e5f4   0x00000100   Data   RO           30    .constdata          os_core.o
+    0xc000e6f4   0x00000022   Data   RO          289    .constdata          _printf_hex.o(c_a__un.l)
+    0xc000e716   0x00000002   PAD
+    0xc000e718   0x00000004   Data   RO          306    .constdata          _printf_wctomb.o(c_a__un.l)
+    0xc000e71c   0x00000011   Data   RO          331    .constdata          __printf.o(c_a__un.l)
+    0xc000e72d   0x00000003   PAD
+    0xc000e730   0x00000094   Data   RO          351    .constdata          bigflt0.o(c_a__un.l)
+    0xc000e7c4   0x0000001c   Data   RO          376    .constdata          lc_numeric_c.o(c_a__un.l)
+    0xc000e7e0   0x0000010d   Data   RO          387    .constdata          lc_ctype_c.o(c_a__un.l)
+    0xc000e8ed   0x00000142   Data   RO          398    .constdata          defsig.o(c_a__un.l)
+
+
+    Execution Region ER_RW (Base: 0xc000ea30, Size: 0x00000050, Max: 0xffffffff, ABSOLUTE)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0xc000ea30   0x00000038   Data   RW           29    .data               os_core.o
+    0xc000ea68   0x00000004   Data   RW           33    .data               os_core.o
+    0xc000ea6c   0x00000004   Data   RW           34    .data               os_core.o
+    0xc000ea70   0x00000004   Data   RW           36    .data               os_core.o
+    0xc000ea74   0x00000004   Data   RW          243    .data               timer.o
+    0xc000ea78   0x00000008   Data   RW          270    .data               Printf.o
+
+
+    Execution Region ER_ZI (Base: 0xc000ea80, Size: 0x0000a008, Max: 0xffffffff, ABSOLUTE)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0xc000ea80   0x00000e8c   Zero   RW           31    .bss                os_core.o
+    0xc000f90c   0x00000118   Zero   RW           32    .bss                os_core.o
+    0xc000fa24   0x00000384   Zero   RW           35    .bss                os_core.o
+    0xc000fda8   0x00000258   Zero   RW           37    .bss                os_core.o
+    0xc0010000   0x00007000   Zero   RW          156    .bss                main.o
+    0xc0017000   0x00001a28   Zero   RW          271    .bss                Printf.o
+    0xc0018a28   0x00000060   Zero   RW          344    .bss                libspace.o(c_a__un.l)
+
+
+================================================================================
+
+Image component sizes
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
+
+       412         92          0          0          0        312   6410init.o
+       436         32          0          0          0        384   Os_cpu_a.o
+       220          8          0          0          0      18048   Os_cpu_c.o
+       244         16          0          8       6696       1820   Printf.o
+       716        264          0          0      28672      10356   main.o
+      3032         76        256         68       5504      15044   os_core.o
+      3220         28          0          0          0       7216   os_flag.o
+      1076          8          0          0          0       3112   os_mem.o
+      2292         24          0          0          0       4860   os_q.o
+      2848         40          0          0          0       6900   os_task.o
+       612         20          0          0          0       1948   os_time.o
+       184          8          0          0          0       1064   speed.o
+       472        112          0          4          0       2288   timer.o
+       204          8          0          0          0       1664   uart.o
+
+    ------------------------------------------------------------------------
+     15968        736        256         80      40872      75016   Object Totals
+         0          0          0          0          0          0   (incl. Generated)
+         0          0          0          0          0          0   (incl. Padding)
+
+    ------------------------------------------------------------------------
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Library Member Name
+
+        68          4          0          0          0          0   __0sprintf.o
+      1168          4         17          0          0          0   __printf.o
+        76          0          0          0          0          0   __raise.o
+        84          8          0          0          0          0   _printf_char_common.o
+        60          0          0          0          0          0   _printf_charcount.o
+       192         16          0          0          0          0   _printf_dec.o
+      2564         36          0          0          0          0   _printf_fp_dec.o
+       304         24         34          0          0          0   _printf_hex.o
+        20          0          0          0          0          0   _printf_input_char.o
+       288          0          0          0          0          0   _printf_intcommon.o
+       224         16          0          0          0          0   _printf_longlong_dec.o
+       232          8          0          0          0          0   _printf_oct.o
+        52          0          0          0          0          0   _printf_outstr_char.o
+       156          0          0          0          0          0   _printf_pad.o
+       156          0          0          0          0          0   _printf_str.o
+        68          0          0          0          0          0   _printf_truncate.o
+       320          4          4          0          0          0   _printf_wctomb.o
+        20          0          0          0          0          0   _sputc.o
+       112          0          0          0          0          0   _wcrtomb.o
+         4          0          0          0          0          0   aeabi_idiv0.o
+       384          0          0          0          0          0   aeabi_sdiv.o
+       332         16        148          0          0          0   bigflt0.o
+      2012        128          0          0          0          0   btod.o
+        64          0          0          0          0          0   classify.o
+       332        124        322          0          0          0   defsig.o
+       104          8          0          0          0          0   dtoi.o
+        60          4          0          0          0          0   fpclassify.o
+         8          0          0          0          0          0   istatus.o
+        60          8        269          0          0          0   lc_ctype_c.o
+        60          8         28          0          0          0   lc_numeric_c.o
+        12          4          0          0         96          0   libspace.o
+       152          0          0          0          0          0   lludiv10.o
+         4          0          0          0          0          0   printf1.o
+         4          0          0          0          0          0   printf2.o
+        20          4          0          0          0          0   rt_ctype_table.o
+        12          0          0          0          0          0   rt_div0.o
+        24          0          0          0          0          0   rt_raise.o
+        44          0          0          0          0          0   rtudiv10.o
+       160          4          0          0          0          0   strcmp.o
+        24          8          0          0          0          0   sys_exit.o
+        24          0          0          0          0          0   sys_wrch.o
+         4          0          0          0          0          0   use_semi.o
+        64          4          0          0          0          0   vsprintf.o
+
+    ------------------------------------------------------------------------
+     10132        440        828          0         96          0   Library Totals
+         0          0          6          0          0          0   (incl. Padding)
+
+    ------------------------------------------------------------------------
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Library Name
+
+      9888        428        822          0         96          0   c_a__un.l
+        16          0          0          0          0          0   fz_avp.l
+       228         12          0          0          0          0   m_avpu.l
+
+    ------------------------------------------------------------------------
+     10132        440        828          0         96          0   Library Totals
+
+    ------------------------------------------------------------------------
+
+================================================================================
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
+
+     26100       1176       1084         80      40968      75016   Grand Totals
+     26100       1176       1084         80      40968      75016   Image Totals
+
+================================================================================
+
+    Total RO  Size (Code + RO Data)                27184 (  26.55kB)
+    Total RW  Size (RW Data + ZI Data)             41048 (  40.09kB)
+    Total ROM Size (Code + RO Data + RW Data)      27264 (  26.63kB)
+
+================================================================================
+

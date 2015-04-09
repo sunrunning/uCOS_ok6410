@@ -1,0 +1,9 @@
+#ifndef _TYPEDEF_H_
+#define _TYPEDEF_H_
+
+typedef unsigned char		uchar;
+typedef volatile unsigned long	vu_long;
+typedef volatile unsigned short vu_short;
+typedef volatile unsigned char	vu_char;
+
+#endif
